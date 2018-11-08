@@ -1,0 +1,11 @@
+{
+  "ResourceGroup": {
+    "Name": "BLRS-C151",
+    "DefaultLocation": "US EAST"
+  },
+  "SQL": {
+    "Database": null,
+    "ServerName": null,
+    "DTU": 50
+  }
+}

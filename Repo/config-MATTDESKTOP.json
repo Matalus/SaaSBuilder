@@ -1,0 +1,60 @@
+{
+  "SubscriptionName": null,
+  "Credentials": {
+    "User": null,
+    "Pass": null
+  },
+  "ResourceGroup": {
+    "Name": "BLRS-DOC",
+    "DefaultLocation": "eastus",
+    "CIDR": "172.18.0.0/16"
+  },
+  "SQL": {
+    "SAUser": null,
+    "SAPass": null,
+    "PricingTier": "S2",
+    "Collation": "SQL_Latin1_General_CP1_CI_AS",
+    "FireWall": [
+      
+    ],
+    "RunBuildScripts": true,
+    "RunChangeSets": null,
+    "ChangeSets": null,
+    "ScriptsDir": null,
+    "initScriptComplete": false,
+    "LastScriptComplete": null
+  },
+  "StorageAccount": {
+    "Type": "Standard_LRS"
+  },
+  "AppServer": {
+    "OS": "Windows",
+    "Image": "2016-Datacenter",
+    "Publisher": "MicrosoftWindowsServer",
+    "Offer": "WindowsServer",
+    "Version": "latest",
+    "User": null,
+    "Pass": null,
+    "Size": "Standard_B4MS",
+    "CIDR": "172.18.1.0/24"
+  },
+  "ApplicationGateway": {
+    "Enabled": false,
+    "BackEndPrefix": "10.0.1.0/24",
+    "AGPrefix": "10.0.2.0/24",
+    "Sku": "Standard_Small",
+    "Tier": "Standard",
+    "Capacity": 2
+  },
+  "PSModule": {
+    "Enabled": true,
+    "Repository": "http://www.powershellgallery.com",
+    "Modules": [
+      "PowerShellGet",
+      "Azure",
+      "AzureRM",
+      "ImportExcel",
+      "Invoke-SqlCmd2"
+    ]
+  }
+}
