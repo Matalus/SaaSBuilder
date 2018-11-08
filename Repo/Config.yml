@@ -1,0 +1,65 @@
+SQL:
+  ScriptsDir: 
+  RunChangeSets: 
+  RunBuildScripts: true
+  PricingTier: S2
+  SAUser: 
+  ChangeSets: 
+  LastScriptComplete: 
+  initScriptComplete: true
+  FireWall: []
+  Collation: SQL_Latin1_General_CP1_CI_AS
+  SAPass: 
+AppServer:
+  Image: 2016-Datacenter
+  Pass: 
+  Size: Standard_B4MS
+  Version: latest
+  Offer: WindowsServer
+  OS: Windows
+  CIDR: 172.18.0.0/24
+  Publisher: MicrosoftWindowsServer
+  User: 
+StorageAccount:
+  Type: Standard_LRS
+SubscriptionName: 
+PSModule:
+  Modules:
+  - PowerShellGet
+  - Azure
+  - AzureRM
+  - ImportExcel
+  - Invoke-SqlCmd2
+  Repository: http://www.powershellgallery.com
+  Enabled: true
+ResourceGroup:
+  CIDR: 172.18.0.0/16
+  DefaultLocation: eastus
+  Name: BLRS-DOC
+  NSG_Rules:
+  - Direction: Inbound
+    Protocol: TCP
+    Name: SSL_WebShell
+    Pri: 104
+    PortRange: 443
+  - Direction: Inbound
+    Protocol: TCP
+    Name: Central_Viz_Designer_SVC
+    Pri: 105
+    PortRange: 16050-16052
+  - Direction: Inbound
+    Protocol: TCP
+    Name: RDP
+    Pri: 1000
+    PortRange: 3389
+ApplicationGateway:
+  Sku: Standard_Small
+  Capacity: 2
+  Enabled: false
+  BackEndPrefix: 10.0.1.0/24
+  Tier: Standard
+  AGPrefix: 10.0.2.0/24
+Credentials:
+  User: 
+  Pass: 
+

@@ -1,0 +1,8 @@
+ResourceGroup:
+  Name: BLRS-C151
+  DefaultLocation: US EAST
+SQL:
+  Database: 
+  ServerName: 
+  DTU: 50
+

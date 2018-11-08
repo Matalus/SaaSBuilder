@@ -1,0 +1,48 @@
+SubscriptionName: 
+Credentials:
+  User: 
+  Pass: 
+ResourceGroup:
+  Name: BLRS-SaaS-Test
+  DefaultLocation: eastus2
+SQL:
+  Database: 
+  ServerName: 
+  SAUser: 
+  SAPass: 
+  PricingTier: S2
+  Collation: SQL_Latin1_General_CP1_CI_AS
+  FireWall: []
+  RunBuildScripts: false
+  RunChangeSets: false
+  ChangeSets: 
+  ScriptsDir: 
+  initScriptComplete: true
+  LastScriptComplete: 
+StorageAccount:
+  Type: Standard_LRS
+AppServer:
+  ServerName: 
+  OS: Windows
+  Image: 2016-Datacenter
+  Publisher: MicrosoftWindowsServer
+  Offer: WindowsServer
+  Version: latest
+  User: 
+  Pass: 
+  Size: Standard_B4MS
+ApplicationGateway:
+  Enabled: false
+  BackEndPrefix: 10.0.1.0/24
+  AGPrefix: 10.0.2.0/24
+  Sku: Standard_Small
+  Tier: Standard
+  Capacity: 2
+PSModule:
+  Repository: http://www.powershellgallery.com
+  Modules:
+  - PowerShellGet
+  - Invoke-SqlCmd2
+  - Azure
+  - AzureRM
+

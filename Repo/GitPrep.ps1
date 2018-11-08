@@ -67,6 +67,7 @@ ForEach($file in $ConfigFiles | Where-Object{$_.FullName -notlike "*.vs*"}){
         $output.SQL.Firewall = @()
     }
     $output | ConvertTo-Json -Depth 50 | Format-JSON | Set-Content $file.FullName -Force
+    $output | ConvertTo-Yaml | Set-Content $file.FullName.Replace("json","yml") -Force
 }
 
 Log "GitPrep Complete"
