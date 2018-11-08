@@ -1,3 +1,9 @@
-/*.*
+/*.ps1
+/*.json
+/*.psm1
+/*.yml
+!Repo/
+launch.json
 Modules
 .vs
+!Repo/Config.yml

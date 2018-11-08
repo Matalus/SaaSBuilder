@@ -3,7 +3,7 @@ Credentials:
   User: 
   Pass: 
 ResourceGroup:
-  Name: BLRS-SaaS-Test
+  RGName: 
   DefaultLocation: eastus2
 SQL:
   Database: 

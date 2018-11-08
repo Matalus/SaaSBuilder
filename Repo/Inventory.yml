@@ -1,5 +1,5 @@
 ResourceGroup:
-  Name: BLRS-C151
+  RGName: 
   DefaultLocation: US EAST
 SQL:
   Database: 

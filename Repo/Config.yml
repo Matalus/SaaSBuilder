@@ -35,7 +35,7 @@ PSModule:
 ResourceGroup:
   CIDR: 172.18.0.0/16
   DefaultLocation: eastus
-  Name: BLRS-DOC
+  RGName: 
   NSG_Rules:
   - Direction: Inbound
     Protocol: TCP

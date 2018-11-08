@@ -3,7 +3,7 @@ Credentials:
   User: 
   Pass: 
 ResourceGroup:
-  Name: BLRS-SBA
+  RGName: 
   DefaultLocation: eastus2
 SQL:
   Database: 

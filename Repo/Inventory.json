@@ -1,6 +1,6 @@
 {
   "ResourceGroup": {
-    "Name": "BLRS-C151",
+    "RGName": null,
     "DefaultLocation": "US EAST"
   },
   "SQL": {

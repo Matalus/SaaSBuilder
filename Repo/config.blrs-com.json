@@ -5,7 +5,7 @@
     "Pass": null
   },
   "ResourceGroup": {
-    "Name": "BLRS-SaaS-Test",
+    "RGName": null,
     "DefaultLocation": "eastus2"
   },
   "SQL": {

@@ -43,7 +43,7 @@
   "ResourceGroup": {
     "CIDR": "172.18.0.0/16",
     "DefaultLocation": "eastus",
-    "Name": "BLRS-DOC",
+    "RGName": null,
     "NSG_Rules": [
       {
         "Direction": "Inbound",
